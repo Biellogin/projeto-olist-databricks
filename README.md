@@ -40,5 +40,5 @@ Análise de Sazonalidade: Agrupamento de pedidos por mês para identificar tend�
 
 Cálculo de Faturamento: Implementação de Joins entre tabelas para consolidar o faturamento mensal total.
 
-📈 Conclusão
+  Conclusão
 Este projeto reforça meu domínio em SQL e minha familiaridade com ecossistemas de Big Data, preparando-me para desafios reais no mercado de análise de dados e engenharia de software.
