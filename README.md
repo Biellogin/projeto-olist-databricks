@@ -1,44 +1,42 @@
-Projeto: Pipeline de Dados E-commerce (Olist) no Databricks 
-  Contexto Acadêmico
-Este projeto foi desenvolvido como parte dos meus estudos práticos em Análise e Desenvolvimento de Sistemas (ADS) na UCSal. O objetivo é aplicar conceitos de Engenharia de Dados e Big Data em cenários reais, demonstrando a transição da teoria acadêmica para a prática profissional com ferramentas de mercado.
+# Projeto: Pipeline de Dados E-commerce Olist no Databricks
 
-  Sobre o Projeto
-Desenvolvimento de um pipeline de dados utilizando a plataforma Azure Databricks para analisar o comportamento de vendas de um grande e-commerce brasileiro. O projeto foca na transformação de dados brutos em insights de negócio, utilizando Spark SQL para processamento em larga escala.
+## Contexto Academico
+Este projeto foi desenvolvido como parte dos meus estudos praticos em Analise e Desenvolvimento de Sistemas (ADS) na UCSal. O objetivo e aplicar conceitos de Engenharia de Dados e Big Data em cenarios reais, demonstrando a transicao da teoria academica para a pratica profissional com ferramentas de mercado.
 
-  Tecnologias e Ferramentas
-Ambiente: Azure Databricks (Community Edition)
+## Sobre o Projeto
+Desenvolvimento de um pipeline de dados utilizando a plataforma Azure Databricks para analisar o comportamento de vendas de um grande e-commerce brasileiro. O projeto foca na transformacao de dados brutos em insights de negocio, utilizando Spark SQL para processamento em larga escala.
 
-Linguagem Principal: Spark SQL
+## Tecnologias e Ferramentas
+* Ambiente: Azure Databricks (Community Edition)
+* Linguagem Principal: Spark SQL
+* Processamento de Dados: Spark Engine
+* Arquitetura: Conceitos de Arquitetura Medalhao (Bronze e Silver)
+* Visualizacao: Databricks Built-in Visualizations
 
-Processamento de Dados: Spark Engine
+## Estrutura do Pipeline
 
-Arquitetura: Conceitos de Arquitetura Medalhão (Bronze e Silver)
+### 1. Ingestao (Camada Bronze)
+Criacao das tabelas atraves do upload de arquivos CSV brutos para o catalogo do Databricks:
+* pedidos_brutos: Dados originais de pedidos.
+* itens_pedidos: Detalhamento de preços e produtos por transacao.
 
-Visualização: Databricks Built-in Visualizations
+### 2. Transformacao e Limpeza (Camada Silver)
+Processamento SQL para padronizacao de tipos de dados e filtragem de registros validos:
+* Conversao de strings para formatos de data (timestamps).
+* Filtragem de pedidos com status entregue (delivered).
+* Refatoracao de colunas para facilitar a manutencao do codigo.
 
-  Estrutura do Pipeline
-1. Ingestão (Camada Bronze)
-Criação das tabelas através do upload de arquivos CSV brutos para o catálogo do Databricks:
+### 3. Analise de Negocio (Camada Gold)
+Geracao de metricas estrategicas via SQL:
+* Analise de Sazonalidade: Agrupamento de pedidos por mes para identificar tendencias de volume.
+* Calculo de Faturamento: Implementacao de Joins entre tabelas para consolidar o faturamento mensal total.
 
-pedidos_brutos: Dados originais de pedidos.
+## Conclusao
+Este projeto reforca meu dominio em SQL e minha familiaridade com ecossistemas de Big Data, preparando-me para desafios reais no mercado de analise de dados e engenharia de software.
 
-itens_pedidos: Detalhamento de preços e produtos por transação.
+---
 
-2. Transformação e Limpeza (Camada Silver)
-Processamento SQL para padronização de tipos de dados e filtragem de registros válidos:
-
-Conversão de strings para formatos de data (timestamps).
-
-Filtragem de pedidos com status "entregue" (delivered).
-
-Refatoração de colunas para facilitar a manutenção do código.
-
-3. Análise de Negócio (Camada Gold)
-Geração de métricas estratégicas via SQL:
-
-Análise de Sazonalidade: Agrupamento de pedidos por mês para identificar tendências de volume.
-
-Cálculo de Faturamento: Implementação de Joins entre tabelas para consolidar o faturamento mensal total.
-
-  Conclusão
-Este projeto reforça meu domínio em SQL e minha familiaridade com ecossistemas de Big Data, preparando-me para desafios reais no mercado de análise de dados e engenharia de software.
+## Contato
+* LinkedIn: [Gabriel Cardoso Dos Santos](https://www.linkedin.com/in/gabriel-cardoso-santos0611/)
+* Email: gabriel.cardoso0611@gmail.com
+* Formacao: Estudante de Analise e Desenvolvimento de Sistemas - UCSalha familiaridade com ecossistemas de Big Data, preparando-me para desafios reais no mercado de análise de dados e engenharia de software.
